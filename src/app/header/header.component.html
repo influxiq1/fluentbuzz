@@ -1,0 +1,44 @@
+<mat-card class="vpheaderwrapper">
+  <mat-card-content>
+      <span class="homemain">
+          <mat-toolbar color="primary">
+          <mat-toolbar-row>
+            <span class="topmenuiconlogo">
+               <span class="logowrappersml" fxFlex><a [routerLink]="['/home']"><img src="../../assets/images/logo.png" class="landinglogoblock1"></a></span>
+              <button mat-icon-button (click)="toggleNavbar()" fxShow="true" fxHide.gt-sm><mat-icon>menu</mat-icon></button>
+              <span class="menu-spacer"></span>
+            </span>
+            <span fxShow="true" class="smlmenudiv" [ngClass]="{ 'show': navbarOpen }">
+                <mat-nav-list fxLayout>
+                  <span class="logowrapper" fxFlex><a [routerLink]="['/home']"><img src="../../assets/images/logo.png" class="landinglogoblock1"></a></span>
+                  <span class="menuwrapper">
+                      <mat-list-item fxFlex [ngClass]="router.url === '/home' ? 'active' : ''">
+                        <a [routerLink]="['/home']">Home</a>
+                      </mat-list-item>
+                      <mat-list-item fxFlex [ngClass]="router.url === '/influencers' ? 'active' : ''">
+                        <a [routerLink]="['/influencers']">Influencers</a>
+                      </mat-list-item>
+                    
+                     
+                      <mat-list-item fxFlex [ngClass]="router.url === '/contactus' ? 'active' : ''">
+                        <a [routerLink]="['/contactus']">Contact Us</a>
+                      </mat-list-item>
+                     <!-- <mat-list-item fxFlex>
+                        <a [matMenuTriggerFor]="menu">Submenu</a>
+                        <mat-menu #menu="matMenu">
+                          <button mat-menu-item>Submenu 1</a>
+                          <button mat-menu-item>Submenu 2</a>
+                        </mat-menu>
+                      </mat-list-item>-->
+                  </span>
+                </mat-nav-list>
+            </span>
+          </mat-toolbar-row>
+          </mat-toolbar>
+        </span>
+  </mat-card-content>
+ 
+</mat-card>
+
+
+

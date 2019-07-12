@@ -1,0 +1,136 @@
+<app-header></app-header>
+
+<!-- <mat-card class="vpblock1bg">
+    <mat-card-content>
+        <p class="pic-wrapper">
+            <figure style="background-image: url(../../assets/images/homebannerbg.jpg)" class="pic-1"></figure>
+        </p>
+     
+            <span class="vpblock1wrapper animation-box">
+                    
+                <img class="fly1" src="../../assets/images/fly1.png">
+                <img class="fly2" src="../../assets/images/fly2.png">
+                <img class="fly3" src="../../assets/images/fly3.png">
+            
+                <span class="formcls" id="formclsblock">
+                    <mat-card-header>
+                            <h2>contact us</h2>
+                          </mat-card-header>
+                
+                          <mat-card-content class="example-container">
+                              <mat-form-field>
+                                <input matInput placeholder="First Name">
+                              </mat-form-field>
+                              <mat-form-field>
+                                <input matInput placeholder="Last Name">
+                              </mat-form-field>
+                              <mat-form-field>
+                                <input matInput placeholder="Telephone">
+                              </mat-form-field>
+                              <mat-form-field>
+                                <input matInput placeholder="Email">
+                              </mat-form-field>
+                              <mat-form-field>
+                                <input matInput placeholder="Country">
+                              </mat-form-field>
+                              <mat-form-field>
+                                <input matInput placeholder="City">
+                              </mat-form-field>
+
+                              <mat-form-field>
+                                <mat-label>Select an option</mat-label>
+                                <mat-select [(value)]="selected">
+                                  <mat-option>None</mat-option>
+                                  <mat-option value="option1">State/Province</mat-option>
+                                  <mat-option value="option2">Option 2</mat-option>
+                                  <mat-option value="option3">Option 3</mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                              <mat-form-field>
+                                <textarea matInput placeholder="Textarea"></textarea>
+                              </mat-form-field>     
+                          </mat-card-content>                
+                            <mat-card-footer>
+                              <button mat-button>Submit</button>
+                            </mat-card-footer>
+            </span>
+
+
+            </span>
+   
+    </mat-card-content>
+</mat-card> -->
+
+<mat-card class="vpblock1bg influencebannertopblock contactus">
+    <mat-card-content class="topbannerhomewrapper">
+    <span class="mainwrappercontent">
+            <span class="vpblock1imgleftwrapper">
+                    <img src="../../assets/images/homebannerbg.jpg" class="vpblock1imgleft">
+                  </span>
+                  
+      <span class="topbannerhomecontentform">
+           
+        
+        <span class="topbannerhomeright formcls contactusformcls" id="formclsblock">
+            <mat-card-header>
+                <h2>contact us</h2>
+              </mat-card-header>
+    
+              <form class="example-container" [formGroup]="contactusForm" (ngSubmit)="contactusSubmit()">
+                  <mat-form-field>
+                    <input   matInput placeholder="First Name"  [formControl]="contactusForm.controls['firstname']"   (blur)="inputblur('firstname')">
+                    <mat-error  *ngIf="!contactusForm.controls['firstname'].valid && contactusForm.controls['firstname'].touched">First Name field can not be blank</mat-error>
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input   matInput placeholder="Last Name" [formControl]="contactusForm.controls['lastname']"  (blur)="inputblur('lastname')">
+                    <mat-error  *ngIf="!contactusForm.controls['lastname'].valid && contactusForm.controls['lastname'].touched" >Last Name field can not be blank</mat-error>
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input  matInput placeholder="Telephone"  [formControl]="contactusForm.controls['telephone']"  (blur)="inputblur('telephone')">
+                    <mat-error  *ngIf="!contactusForm.controls['telephone'].valid && contactusForm.controls['telephone'].touched">Telephone field can not be blank</mat-error>
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input   matInput placeholder="Email"  [formControl]="contactusForm.controls['email']"  (blur)="inputblur('email')">
+                    <mat-error  *ngIf="!contactusForm.controls['email'].valid && contactusForm.controls['email'].touched">Email field can not be blank</mat-error>
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input  matInput placeholder="Country"  [formControl]="contactusForm.controls['country']"  (blur)="inputblur('country')">
+                    <mat-error  *ngIf="!contactusForm.controls['country'].valid && contactusForm.controls['country'].touched">Country field can not be blank</mat-error>
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input matInput placeholder="City"  [formControl]="contactusForm.controls['city']"  (blur)="inputblur('city')">
+                    <mat-error  *ngIf="!contactusForm.controls['city'].valid && contactusForm.controls['city'].touched">City field can not be blank</mat-error>
+                  </mat-form-field>
+
+                  <mat-form-field>
+                    <mat-label>Select an option</mat-label>
+                    <mat-select  placeholder="Select State"  [formControl]="contactusForm.controls['state']" >
+                      <mat-option *ngFor="let item of stateslist" value="{{item.abbreviation}}">{{item.name}}</mat-option>
+                    </mat-select>
+                    <mat-error  *ngIf="!contactusForm.controls['state'].valid && contactusForm.controls['state'].touched">State field can not be blank</mat-error>
+                    <!-- <mat-select [(value)]="selected">
+                      <mat-option>None</mat-option>
+                      <mat-option value="option1">State/Province</mat-option>
+                      <mat-option value="option2">Option 2</mat-option>
+                      <mat-option value="option3">Option 3</mat-option>
+                    </mat-select> -->
+                  </mat-form-field>
+                  <mat-form-field>
+                    <textarea matInput placeholder="Message"  [formControl]="contactusForm.controls['message']"  (blur)="inputblur('message')"></textarea>
+                    <mat-error  *ngIf="!contactusForm.controls['message'].valid && contactusForm.controls['message'].touched">Message field can not be blank</mat-error>
+                  </mat-form-field>   
+                  <mat-card-footer>
+                    <button mat-button>Submit</button>
+                  </mat-card-footer>  
+                </form>                
+                
+        </span>
+        <img class="fly1" src="../../assets/images/fly1.png">
+                <img class="fly2" src="../../assets/images/fly2.png">
+                <img class="fly3" src="../../assets/images/fly3.png">
+      </span>
+    </span>
+    </mat-card-content>
+</mat-card>
+
+<app-footer></app-footer>

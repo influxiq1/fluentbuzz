@@ -1,0 +1,31 @@
+.influencebannertopblock {background:url(../../assets/images/homebannerbg.jpg) #310b17;background-repeat:no-repeat;background-position:right 85% top;padding-bottom:50px!important}
+.vpblock1imgleftwrapper {display:none}
+.topbannerhomecontentform {display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;justify-content:space-between;width:868px;float:right;padding-top:8%;flex-wrap:wrap;margin-right:5%;position:relative}
+.topbannerhomecontentform h2 {display:block;width:100%;align-items:center;justify-content:center;text-align:center;font-family:'CamboRegular';font-size:36px;line-height:44px;color:#f3f7f9;font-weight:400;margin-bottom:15px}
+.vpblock1bg.influencebannertopblock .vpblock1wrapper {z-index:99;position:relative;top:0;right:0;opacity:1;width:1500px;height:100%;margin:0 auto;display:block}
+.topbannerhomeleft {width:55%;padding-left:5%}
+.contactus {min-height: 966px}
+.contactus .topbannerhomecontentform {width: 363px;float: right;padding-top: 10%;flex-wrap: wrap;margin-right: 24%;position: relative;margin-left: auto}
+.contactus .fly1 {position: absolute;top: 17%;right: -49%}
+.contactus .fly3 {position: absolute;top: 46%;right: -120%}
+.contactus .fly2 {position: absolute;top: 83%;left: -50%}
+.topbannerhomecontentform .formcls.contactusformcls .mat-card-header h2 {margin-bottom: 0}
+@media (max-width:1800px) {.influencebannertopblock.contactus {background-position: right 30% top}
+}
+@media (max-width:1666px) {.influencebannertopblock.contactus {background-position: right 35% top}
+}
+@media (max-width:1366px) {.contactus .fly1 {position: absolute;top: 17%;right: -49%;width: 604px;}
+.contactus .fly3 {position: absolute;top: 67%;right: -68%;width: 242px;}
+.contactus .topbannerhomecontentform {padding-top: 14%;}
+}
+@media (max-width:1199px) {.contactus .fly3 {position: absolute;top: 77%;right: -60%;width: 215px;}.influencebannertopblock.contactus {background-position: right 40% top;}
+.contactus .topbannerhomecontentform {margin-right: 22%;padding-top: 17%;}
+}
+@media (max-width:991px) {.contactus .topbannerhomecontentform h2 {margin-top: 0;font-size: 24px;line-height: normal;width: 96%;margin: 0 auto;}
+.contactus .topbannerhomecontentform h2 br {display: none;}
+.contactus {min-height: 1px;}
+.topbannerhomecontentform {display: block !important;float: none !important;position: relative !important;width: 96% !important;margin: 0 auto!important;padding-top: 5% !important;}
+.vpblock1imgleftwrapper {display: block!important;width: 100%;}
+.vpblock1imgleftwrapper img {max-width: 163%}
+.influencebannertopblock {background: #5c0609!important;padding-bottom: 30px!important;}
+}

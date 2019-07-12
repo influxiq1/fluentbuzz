@@ -1,0 +1,244 @@
+<app-header></app-header>
+
+<mat-card class="vpblock1bg influencebannertopblock influencebanner">
+        <mat-card-content class="topbannerhomewrapper">
+        <span class="mainwrappercontent">
+                <span class="vpblock1imgleftwrapper">
+                        <img src="../../assets/images/homebannerbg.jpg" class="vpblock1imgleft">
+                      </span>
+                      
+          <span class="topbannerhomecontentform">
+                <h2>Influencers be part of the biggest <br>
+                    movement in the influencer space to date!
+                    </h2>
+            <span class="topbannerhomeleft">
+                    <p>We want to change <br>
+                        the way you think about <br> making money and get you on <br> your way to a <span>BIG SCORE!</span> <br>  We are different  <br>
+                        and for you that is a</p>
+                        <mat-card-title>GOOD THING.</mat-card-title>
+                        <p>Please fill out the information to the right and get in on the action!</p>
+            </span>
+            <span class="topbannerhomeright formcls" id="formclsblock">
+                    <mat-card-header>
+                            <h2>Influencers get in with 
+                                    <span>the BUZZ right now!</span></h2>
+                          </mat-card-header>
+                
+                          <form class="example-container"  [formGroup]="influencersForm" (ngSubmit)="influencersSubmit()">
+                              <mat-form-field>
+                                    <input matInput placeholder="First Name"  [formControl]="influencersForm.controls['firstname']"   (blur)="inputblur('firstname')">
+                                    <mat-error  *ngIf="!influencersForm.controls['firstname'].valid && influencersForm.controls['firstname'].touched">First Name field can not be blank</mat-error>
+                                  </mat-form-field>
+                                  <mat-form-field>
+                                    <input   matInput placeholder="Last Name" [formControl]="influencersForm.controls['lastname']"  (blur)="inputblur('lastname')">
+                                    <mat-error  *ngIf="!influencersForm.controls['lastname'].valid && influencersForm.controls['lastname'].touched" >Last Name field can not be blank</mat-error>
+                                  </mat-form-field>
+                                  <mat-form-field>
+                                    <input  matInput placeholder="Telephone"  [formControl]="influencersForm.controls['telephone']"  (blur)="inputblur('telephone')">
+                                    <mat-error  *ngIf="!influencersForm.controls['telephone'].valid && influencersForm.controls['telephone'].touched">Telephone field can not be blank</mat-error>
+                                  </mat-form-field>
+                                  <mat-form-field>
+                                    <input   matInput placeholder="Email"  [formControl]="influencersForm.controls['email']"  (blur)="inputblur('email')">
+                                    <mat-error  *ngIf="!influencersForm.controls['email'].valid && influencersForm.controls['email'].touched">Email field can not be blank</mat-error>
+                                  </mat-form-field>
+                                  <mat-form-field>
+                                    <input  matInput placeholder="Country"  [formControl]="influencersForm.controls['country']"  (blur)="inputblur('country')">
+                                    <mat-error  *ngIf="!influencersForm.controls['country'].valid && influencersForm.controls['country'].touched">Country field can not be blank</mat-error>
+                                  </mat-form-field>
+                                  <mat-form-field>
+                                    <input matInput placeholder="City"  [formControl]="influencersForm.controls['city']"  (blur)="inputblur('city')">
+                                    <mat-error  *ngIf="!influencersForm.controls['city'].valid && influencersForm.controls['city'].touched">City field can not be blank</mat-error>
+                                  </mat-form-field>
+                
+                                  <mat-form-field>
+                                    <mat-label>Select an option</mat-label>
+                                    <mat-select  placeholder="Select State"  [formControl]="influencersForm.controls['state']" >
+                                      <mat-option *ngFor="let item of stateslist" value="{{item.abbreviation}}">{{item.name}}</mat-option>
+                                    </mat-select>
+                                    <mat-error  *ngIf="!influencersForm.controls['state'].valid && influencersForm.controls['state'].touched">State field can not be blank</mat-error>
+                                  </mat-form-field>
+                                  <mat-form-field>
+                                        <input matInput placeholder="Facebook"  [formControl]="influencersForm.controls['facebook']"  (blur)="inputblur('facebook')">
+                                        <mat-error  *ngIf="!influencersForm.controls['facebook'].valid && influencersForm.controls['facebook'].touched">Facebook field can not be blank</mat-error>
+                                      </mat-form-field>
+                                      <mat-form-field>
+                                            <input matInput placeholder="Instagram"  [formControl]="influencersForm.controls['instagram']"  (blur)="inputblur('instagram')">
+                                            <mat-error  *ngIf="!influencersForm.controls['instagram'].valid && influencersForm.controls['instagram'].touched">Instagram field can not be blank</mat-error>
+                                          </mat-form-field>
+                                          <mat-form-field>
+                                                <input matInput placeholder="Twitter"  [formControl]="influencersForm.controls['twitter']"  (blur)="inputblur('twitter')">
+                                                <mat-error  *ngIf="!influencersForm.controls['twitter'].valid && influencersForm.controls['twitter'].touched">Twitter field can not be blank</mat-error>
+                                              </mat-form-field>
+                                          <mat-form-field>
+                                                <input matInput placeholder="YouTube"  [formControl]="influencersForm.controls['youtube']"  (blur)="inputblur('youtube')">
+                                                <mat-error  *ngIf="!influencersForm.controls['youtube'].valid && influencersForm.controls['youtube'].touched">YouTube field can not be blank</mat-error>
+                                              </mat-form-field>
+                              <mat-card-footer>
+                                    <button mat-button>Submit</button>
+                                  </mat-card-footer>
+                            
+                          </form>
+                
+                           
+            </span>
+            <img class="influfly1" src="../../assets/images/influfly1.png">
+                <img class="influfly2" src="../../assets/images/influfly2.png">
+                <img class="influfly3" src="../../assets/images/influfly3.png">
+          </span>
+        </span>
+        </mat-card-content>
+    </mat-card>
+    
+
+
+
+
+
+<mat-card class="fbhomeblock1 influenceblock generalcls">
+    <mat-card-content>
+        <mat-list class="newmodifieddiv">
+            <mat-list-item class="competitionblocknew ptb-57 influblock1" style="background-image: url(../../assets/images/fbinfluenceblock1bg1.jpg);background-size: cover; background-repeat: no-repeat; background-position: right center;">
+                <span class="compnewblock2">
+                        <span class="mainwrappercontent">
+                                <span class="compnewblock2wrapperimg">
+                                        <img src="../../assets/images/fbinfluenceblock1bg1sml.jpg">
+                                    </span>
+                                <span class="compnewblock2content">
+                                    <mat-card-title>Residual Income vs. Contracts</mat-card-title>
+                                    
+                                    <mat-card-content><p>With the current influencer payout model, brands choose influencers based on the size of their following. The brand contacts the influencers, a contract is worked out, and a one-time fee is paid. And that’s that.</p>
+                                        <p>
+                                        With a residual income model, like the one <span>FluentBuzz</span> uses, there is no up-front payout. But you will make a percentage of any purchase made by customers you bring to our sites. And this doesn’t just happen once. This happens for the life of the customer. For as long as your customers continue their relationships with our brands, you will make money off every single purchase they make.</p> 
+                                        <p>
+                                        This means that you can build a massive customer base that can pay out to you 
+                                        for years. If your follower buys a ticket or some merch from us five years 
+                                        down the road, you’ll get paid. If your follower buys a shirt or other gear from 
+                                        us ten years down the road, you’ll get paid. This is your chance to build a 
+                                        customer base that will provide long-term profit. 
+                                        An unending wellspring of revenue!
+                                        </p> 
+                                        <p class="sec2btn sec2btnright">
+                                            <button mat-button class="btnyellow sim-button buttoneffect" (click)="toTop()">Get Started Today</button></p>
+                                    </mat-card-content>
+                                </span>
+                        </span>
+                </span>
+            </mat-list-item>
+
+            <mat-list-item class="competitionblocknew ptb-57 influblock2" style="background-image: url(../../assets/images/fbinfluenceblock1bg2.jpg);background-size: cover; background-repeat: no-repeat; background-position: left center;">
+                <span class="compnewblock2">
+                    <span class="mainwrappercontent">
+                        <span class="compnewblock2wrapperimg">
+                            <img src="../../assets/images/fbinfluenceblock1bg2sml.jpg">
+                        </span>
+                        <span class="compnewblock2content">
+                                <mat-card-title>Tying You Into the <br>Larger Money</mat-card-title>                       
+                                              
+                                <mat-card-content><p>The ultimate goal of influencer marketing is simple: SALES. Brands pay influencers based on them promoting their products and increasing sales. And nothing makes brands more giddy than long-term, repeat customers. </p>
+                                    <p> 
+                                    That’s what <span>Fluentbuzz</span> is helping you do. We hook you up with the right brands so you can promote what you’re excited about and what you love. As you bring in customers and they make purchases, we pay you. Every time your followers buy from us, we pay you.</p>
+                                    <p>
+                                    In fact, we pay you the way brands pay themselves. Every time someone buys something with a Star Wars or Nike or any other brand, the company behind the brand makes a little money. We take this concept and extend it to our influencers. When we get paid, you get paid. In that way, we’re tying you into a much larger potential money stream. </p>
+                                    <p>
+                                    The name of the game here is brand loyalty. The more loyal your followers are to our brand, the more stuff they buy, the more you get paid. Customers who loyally purchase from one brand are like gold, and brands will pay you to find such customers. That’s how you find your way to the big money.</p>
+                                    <p class="sec2btn sec2btnright">
+                    <button mat-button class="btnyellow sim-button buttoneffect" (click)="toTop()">Get Started Today</button></p>
+                                    
+                                </mat-card-content>
+                        </span>
+                    </span>
+                </span>
+            </mat-list-item>
+
+            <mat-list-item class="competitionblocknew whitepara ptb-57 influblock3" style="background-image: url(../../assets/images/fbinfluenceblock1bg3.jpg);background-size: cover; background-repeat: no-repeat; background-position: right center;">
+                <span class="compnewblock2">
+                        <span class="mainwrappercontent">
+                                <span class="compnewblock2wrapperimg">
+                                        <img src="../../assets/images/fbinfluenceblock1bg3sml.jpg">
+                                    </span>
+                                <span class="compnewblock2content">
+                                    <mat-card-title>Different yet Familiar</mat-card-title>
+                                    <mat-card-content><p><span>Fluentbuzz</span> represents an evolution in the arena of influencer marketing. Our model is a new way to compensate influencers for their hard work. Nobody in the influencer marketing industry is thinking about how to help you profit or approaching the business in quite the same way.</p>
+                                        <p>
+                                        But that doesn’t mean <span>Fluentbuzz</span> will be completely alien to you. Our platform is built on a scaffolding of features and technology that will be familiar and useful to influencers. We want to revolutionize the way influencer marketing is done, but we want influencers to feel at home, too. And by fusing the old, proven methods with new ways of thinking, FluentBuzz will do exactly that.</p>
+                                        <p>
+                                        We have all the same tools for you to come in, build your profile, share your social media and engage the brands with whom you want to engage. But we also are the only influencer network which will allow you to immediately start marketing and pay you for every single sale we make to your followers for the life of our relationship with your followers.</p>  
+                                            <p class="sec2btn sec2btnright">
+                                                    <button mat-button class="btnyellow sim-button buttoneffect" (click)="toTop()">Get Started Today</button>
+                                                </p>
+                                    </mat-card-content>
+                                    
+                                </span>
+
+                        </span>
+                </span>
+                
+               
+            </mat-list-item>
+
+            <mat-list-item class="competitionblocknew ptb-57 influblock4" style="background-image: url(../../assets/images/fbinfluenceblock1bg4.jpg);background-size: cover; background-repeat: no-repeat; background-position: left center;">
+                <span class="compnewblock2">
+                    <span class="mainwrappercontent">
+                        <span class="compnewblock2wrapperimg">
+                            <img src="../../assets/images/fbinfluenceblock1bg4sml.jpg">
+                        </span>
+                        <span class="compnewblock2content">
+                                <mat-card-title>Immediate Access to All the <br>Media You Need</mat-card-title>                        
+                                <mat-card-content><p><span>FluentBuzz offers</span> a range of businesses you can work with. Just pick out the brands you feel most excited about. Sign the necessary agreements to market for them. Then, our back-office gives you access to all the media you will need to promote your chosen brand.
+                                </p>
+                                <p>
+                                    Our back-office is filled with banners, display ads, PDF files and everything else you might need to spread the word to your followers. We do all the work creating the media and all you have to do is post it!</p>
+                                </mat-card-content>
+                                <mat-card-title>We Can Build Media for You</mat-card-title>                        
+                                <mat-card-content><p>As part of your brand’s partnership with <span>FluentBuzz</span>, we expect you to have media at the ready so that influencers can immediately come in, grab what they need, and start promoting you to their followers. However, if you need media to help get your influencers going, we can build it for you, for a nominal fee. Our team is fast, talented and knows how to put together eye-catching media that embeds itself in your potential customer’s minds.</p></mat-card-content>
+                                <mat-card-title>Make Money - IMMEDIATELY!</mat-card-title>                        
+                                <mat-card-content><p>Most influencer networks make you wait around for brands to come to you. You are at their mercy and there’s no guarantee you’ll be able to make an adequate living or if you’ll even attract any attention at all. </p>
+                                <p><span>FluentBuzz</span> fixes that by giving you the access you need to the brands you want to promote. You pick the brands and make contact. Once the proper agreements are made, you can get the media you need out of our back-office and start pitching your chosen brands to your followers immediately.  No more waiting around for someone to take an interest in you. You make money when you want!</p>
+                    <p class="sec2btn sec2btnright"><button mat-button class="btnyellow sim-button buttoneffect" (click)="toTop()">Get Started Today</button> </p>
+                                    
+                                </mat-card-content>
+                        </span>
+                    </span>
+                </span>
+            </mat-list-item>
+
+            <mat-list-item class="competitionblocknew ptb-57 influblock5" style="background-image: url(../../assets/images/fbinfluenceblock1bg5.jpg);background-size: cover; background-repeat: no-repeat; background-position: right center;">
+                <span class="compnewblock2">
+                        <span class="mainwrappercontent">
+                                <span class="compnewblock2wrapperimg">
+                                        <img src="../../assets/images/fbinfluenceblock1bg5sml.jpg">
+                                    </span>
+                                <span class="compnewblock2content">
+                                    <mat-card-title>Don’t Think Small</mat-card-title>
+                                    <mat-card-content><p><span>FluentBuzz</span> puts control over careers back into the hands of influencers while also giving brands a chance to find new talent with minimal financial risk. Our system encourages influencers to work hard and cultivate brand interest within their social media followings while giving companies a shot at gaining loyal, life-long customers.</p> 
+<p>
+                                        This is the way you grow. Influencers can continue making a commission of every single sale that 
+                                        customers make for the entire lifetime of the relationship the customer maintains with our brands. 
+                                        This is an opportunity for influencers to not only sustain a long-term income, 
+                                        but even get wealthy provided they work hard enough.</p>
+                                        <p>
+                                        Anything worth doing starts with a dream. If your dream is to make a lot of money as a digital 
+                                        influencer, don’t dream small. Don’t think small. Swing for the fences. See the big picture. 
+                                        Work smarter and harder. And recognize when opportunity knocks on your door. </p>
+                                        <p>
+                                        Because, ultimately, opportunity is exactly what FluentBuzz is.  It’s a key that unlocks 
+                                        the door to increased brand visibility and sales. It’s a chance to turn your influence 
+                                        from buzz into confetti bursts of cash!   </p>  
+                                            <p class="sec2btn sec2btnright">
+                                                    <button mat-button class="btnyellow sim-button buttoneffect" (click)="toTop()">Get Started Today</button>
+                                                </p>
+                                    </mat-card-content>
+                                    
+                                </span>
+
+                        </span>
+                </span>
+               
+            </mat-list-item>
+
+        </mat-list>
+
+    </mat-card-content>
+</mat-card>
+
+<app-footer></app-footer>

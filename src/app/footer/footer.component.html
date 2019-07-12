@@ -1,0 +1,43 @@
+<mat-card class="footerwrapper">
+        <span class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+            <a (click)="scrollToTop()">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </span>
+    
+      <span class="mainwrappercontent">
+         <mat-card-content>
+                <span class="logowrapper"><a [routerLink]="['/home']"><img src="../../assets/images/logo.png" class="landinglogoblock1"></a></span>
+           <span class="footertopwrapper footernavlist">
+                <mat-nav-list>
+                  <span class="menuwrapper">
+                      <mat-list-item fxFlex>      
+                        <a [routerLink]="['/home']" [routerLinkActive]="'is-active'">Home</a>
+                      </mat-list-item>
+                      <mat-list-item fxFlex>
+                        <a [routerLink]="['/influencers']">Influencers</a>
+                      </mat-list-item>
+                      <mat-list-item fxFlex>
+                        <a [routerLink]="['/contactus']">Contact Us</a>
+                      </mat-list-item>
+                  </span>
+              </mat-nav-list>
+           </span>
+             
+    
+    
+    
+         </mat-card-content>
+      </span>
+    </mat-card>
+    
+    
+    <mat-card class="footerbottomwrapper">
+      <span class="mainwrappercontent">
+        <mat-card-content>
+          <p>© 2019 FluentBUZZ  LLC. All Rights Reserved</p>
+        </mat-card-content>
+      </span>
+    </mat-card>
+    
+    
