@@ -11,8 +11,10 @@ data: string;
   templateUrl: './contactus.component.html',
   styleUrls: ['./contactus.component.css']
 })
+
+
 export class ContactusComponent implements OnInit {
-@ViewChild(FormGroupDirective) formDirective: FormGroupDirective;
+  @ViewChild(FormGroupDirective, {static: false}) formDirective: FormGroupDirective;
   public contactusForm: FormGroup;
   public stateslist: any;
   public data: any;
