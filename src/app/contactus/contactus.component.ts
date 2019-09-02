@@ -1,19 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import {FormBuilder,FormGroup,FormControlName, Validators} from '@angular/forms';
+import { Component, OnInit, Inject, ViewChild } from '@angular/core';
+import {FormBuilder,FormGroup,FormControlName, Validators, FormGroupDirective} from '@angular/forms';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
+export interface DialogData {
+data: string;
+}
 @Component({
   selector: 'app-contactus',
   templateUrl: './contactus.component.html',
   styleUrls: ['./contactus.component.css']
 })
 export class ContactusComponent implements OnInit {
- 
+@ViewChild(FormGroupDirective) formDirective: FormGroupDirective;
   public contactusForm: FormGroup;
   public stateslist: any;
-  constructor(public fb: FormBuilder, public http: HttpClient) {
+  public data: any;
+  constructor(public fb: FormBuilder, public http: HttpClient, public dialog: MatDialog) {
     this.getState();
-    
+
     this.contactusForm = this.fb.group({
       firstname: ['',Validators.required],
       lastname: ['',Validators.required],
@@ -50,20 +55,46 @@ contactusSubmit() {
       this.contactusForm.controls[x].markAsTouched();
   }
   if(this.contactusForm.valid) {
-    let link: any; 
+    let link: any;
     link = 'http://192.169.196.208:7061/contactusmail';
     let data: any = this.contactusForm.value;
     this.http.post(link, data).subscribe(response =>{
       let result: any;
       result = response;
+      if(result.status == 'success'){
+        this.formDirective.resetForm();
+        this.dialog.open(successmodal, {
+      data: {
+        data: 'Successfully submitted'
+            }
+          });
+      }
     })
   }
-  
+
   console.log(this.contactusForm.value);
 }
 inputblur(val:any){
   console.log('on blur .....');
   this.contactusForm.controls[val].markAsUntouched();
 }
+
+}
+
+@Component({
+  selector: 'successmodal',
+  templateUrl: 'successmodal.html',
+})
+export class successmodal {
+
+  constructor(
+    public dialogRef: MatDialogRef<successmodal>,
+    @Inject(MAT_DIALOG_DATA)
+     public data: DialogData
+   ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
 
 }

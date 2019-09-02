@@ -1,70 +1,353 @@
-.influencebannertopblock {background:url(../../assets/images/homebannerbg.jpg) #310b17;background-repeat:no-repeat;background-position:right 85% top;padding-bottom:50px!important}
-.vpblock1imgleftwrapper {display:none}
-.topbannerhomecontentform {display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;justify-content:space-between;width:868px;float:right;padding-top:8%;flex-wrap:wrap;margin-right:5%;position:relative}
-.topbannerhomecontentform h2 {display:block;width:100%;align-items:center;justify-content:center;text-align:center;font-family:'CamboRegular';font-size:36px;line-height:44px;color:#f3f7f9;font-weight:400;margin-bottom:15px}
-.vpblock1bg.influencebannertopblock .vpblock1wrapper {z-index:99;position:relative;top:0;right:0;opacity:1;width:1500px;height:100%;margin:0 auto;display:block}
-.topbannerhomeleft {width:55%;padding-left:5%}
-.topbannerhomeleft p {font-family:'ArnoProRegular';font-size:32px;line-height:36px;color:#fff;font-weight:400;padding-left:58px}
-.topbannerhomeleft p span {font-family:'ArnoProRegular';color:#fff600;text-transform:uppercase}
-.topbannerhomeleft .mat-card-title {font-family:'ArnoProRegular';font-size:56px;line-height:normal;color:#262626;font-weight:400;text-transform:uppercase;padding:20px 18px 10px;background-color:#ffc830;margin-top:20px;margin-bottom:20px;position:relative}
-.topbannerhomeleft .mat-card-title:before {content:'';background:url(../../assets/images/arrowbgtriangle.png) no-repeat;position:absolute;top:-32px;left:0;width:52px;height:32px}
-.topbannerhomeright {width:45%;z-index:9;position:relative}
-.bannercontentsection {width:876px;float:right;padding-top:13%}
-@media (max-width: 1800px) {.topbannerhomecontentform h2 {font-size:32px;line-height:38px}
-.formcls .mat-card-header h2 {font-size:20px!important;line-height:normal}
-.topbannerhomecontentform {width:800px}
-.topbannerhomeleft p {font-size:28px;line-height:40px}
-.influencebannertopblock.influencebanner {background-position: right 30% top}
-.influfly3 {left: -92%}
+.influencebannertopblock {
+    background: url(../../assets/images/homebannerbg.jpg) #310b17;
+    background-repeat: no-repeat;
+    background-position: right 85% top;
+    padding-bottom: 50px!important
 }
-@media (max-width: 1666px) {.influencebannertopblock.influencebanner {background-position:right 35% top}
-.influfly3 {left: -86%}
+
+.vpblock1imgleftwrapper {
+    display: none
 }
-@media (max-width: 1540px) {.topbannerhomeleft {padding-left: 0%;}
-.topbannerhomecontentform {width: 704px;padding-top: 10%}
-.topbannerhomeleft p {font-size: 27px}
-.influfly3 {position: absolute;left: -90%;width: 185px;top: 30%}
-.topbannerhomeleft .mat-card-title {font-size: 54px;line-height: normal}
+
+.topbannerhomecontentform {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 868px;
+    float: right;
+    padding-top: 8%;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    position: relative
 }
-@media (max-width: 1366px) {.influencebanner .topbannerhomecontentform {padding-top: 12%}
-.influfly3 {width: 120px;top: 38%;left: -78%}
+
+.topbannerhomecontentform h2 {
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'CamboRegular';
+    font-size: 36px;
+    line-height: 44px;
+    color: #f3f7f9;
+    font-weight: 400;
+    margin-bottom: 15px
 }
-@media (max-width: 1280px) {.topbannerhomecontentform {width: 640px;padding-top: 12%}
-.formcls .mat-card-header h2 {font-size: 18px!important;line-height: normal}
-.topbannerhomeleft .mat-card-title {font-size: 48px;line-height: normal}
-.topbannerhomeleft p {font-size: 25px;line-height: 39px}
-.influfly3 {position: absolute;left: -80%;width: 130px;top: 38%}
-.influfly2 {position: absolute;right: -13%; width: 190px;top: 15%;}
-.influfly1 {position: absolute;right: -12%;top: 49%;width: 240px}
+
+.vpblock1bg.influencebannertopblock .vpblock1wrapper {
+    z-index: 99;
+    position: relative;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: block
 }
-@media (max-width:1199px) {.topbannerhomecontentform h2 {font-size: 28px;line-height: 35px;padding-left: 0%}
-.topbannerhomeleft {margin-top: 16px}
-.influencebannertopblock.influencebanner {background-position: right 40% top}
-.influencebanner .topbannerhomecontentform {margin-right: 2%; padding-top: 14%}
+
+.topbannerhomeleft {
+    width: 55%;
+    padding-left: 5%
 }
-@media (max-width:1024px) {.influfly2 {right: -7%;width: 133px}
-.influfly1 {right: -7%;top: 56%;width: 172px}
+
+.topbannerhomeleft p {
+    font-family: 'ArnoProRegular';
+    font-size: 32px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: 400;
+    padding-left: 58px
 }
-@media (max-width:991px) {.influencebanner .topbannerhomecontentform h2 {margin-top: 0;font-size: 26px;line-height: normal;width: 96%;margin: 0 auto 20px}
-.influencebanner .topbannerhomecontentform h2 br {display: none}
-.influencebanner {min-height: 1px}
-.topbannerhomeleft p {line-height: normal;margin-bottom: 20px}
-.topbannerhomeleft .mat-card-title:before {display: none}
-.influencebanner .topbannerhomecontentform {margin-right: 0;padding-top: 14%}
-.topbannerhomeleft {width: 96%;padding-left: 0%;margin: 0 auto}
-.topbannerhomeright {width: 96%;display: block;margin: 0 auto}
-.influencebannertopblock {background:#5c0609!important;padding-bottom: 30px!important}
-.vpblock1imgleftwrapper {display:block!important;width:100%}
-.vpblock1imgleftwrapper img {max-width:163%}
-.topbannerhomecontentform {width: 100%;padding-top: 20px !important;text-align: center;margin-right: auto}
-.topbannerhomeleft p {padding-left: 0}
-.topbannerhomecontentform h2 br {display: none}
-.topbannerhomeleft p br {display: none}
-.topbannerhomecontentform h2 {font-size: 36px;line-height: normal;padding-left: 0; margin-bottom: 0}
-.sec2btn .btnyellow {margin-top: 0px}
-.competitionblocknew .compnewblock2content, .newmodifieddiv .competitionblocknew:nth-child(odd) .compnewblock2content {padding: 20px 10px}
+
+.topbannerhomeleft p span {
+    font-family: 'ArnoProRegular';
+    color: #fff600;
+    text-transform: uppercase
 }
-@media (max-width:540px) {.topbannerhomecontentform h2 {font-size: 28px}
-.influfly1, .influfly2, .influfly3 {display: none}
-.topbannerhomeleft .mat-card-title {font-size: 38px;line-height: normal;}
+
+.topbannerhomeleft .mat-card-title {
+    font-family: 'ArnoProRegular';
+    font-size: 56px;
+    line-height: normal;
+    color: #262626;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 20px 18px 10px;
+    background-color: #ffc830;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative
+}
+
+.topbannerhomeleft .mat-card-title:before {
+    content: '';
+    background: url(../../assets/images/arrowbgtriangle.png) no-repeat;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    width: 52px;
+    height: 32px
+}
+
+.topbannerhomeright {
+    width: 45%;
+    z-index: 9;
+    position: relative
+}
+
+.bannercontentsection {
+    width: 876px;
+    float: right;
+    padding-top: 13%
+}
+
+@media (max-width: 1800px) {
+    .topbannerhomecontentform h2 {
+        font-size: 32px;
+        line-height: 38px
+    }
+    .formcls .mat-card-header h2 {
+        font-size: 20px!important;
+        line-height: normal
+    }
+    .topbannerhomecontentform {
+        width: 800px
+    }
+    .topbannerhomeleft p {
+        font-size: 28px;
+        line-height: 40px
+    }
+    .influencebannertopblock.influencebanner {
+        background-position: right 30% top
+    }
+    .influfly3 {
+        left: -92%
+    }
+}
+
+@media (max-width: 1666px) {
+    .influencebannertopblock.influencebanner {
+        background-position: right 35% top
+    }
+    .influfly3 {
+        left: -86%
+    }
+}
+
+@media (max-width: 1540px) {
+    .topbannerhomeleft {
+        padding-left: 0%;
+    }
+    .topbannerhomecontentform {
+        width: 704px;
+        padding-top: 10%
+    }
+    .topbannerhomeleft p {
+        font-size: 27px
+    }
+    .influfly3 {
+        position: absolute;
+        left: -97%;
+        width: 185px;
+        top: 30%
+    }
+    .topbannerhomeleft .mat-card-title {
+        font-size: 54px;
+        line-height: normal
+    }
+}
+
+@media (max-width: 1440px) {
+    .influfly3 {
+        position: absolute;
+        left: -86%;
+        width: 136px;
+        top: 36%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .influfly3 {
+        position: absolute;
+        left: -78%;
+        width: 100px;
+        top: 38%;
+    }
+}
+
+@media (max-width: 1366px) {
+    .influencebanner .topbannerhomecontentform {
+        padding-top: 12%
+    }
+    .influfly3 {
+        width: 120px;
+        top: 38%;
+        left: -78%
+    }
+}
+
+@media (max-width: 1300px) {
+    .topbannerhomecontentform h2 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .influencebannertopblock.influencebanner {
+        background-position: right 43% top;
+    }
+    .topbannerhomecontentform {
+        width: 640px;
+        padding-top: 12%
+    }
+    .formcls .mat-card-header h2 {
+        font-size: 18px!important;
+        line-height: normal
+    }
+    .topbannerhomeleft .mat-card-title {
+        font-size: 48px;
+        line-height: normal
+    }
+    .topbannerhomeleft p {
+        font-size: 25px;
+        line-height: 39px
+    }
+    .influfly3 {
+        position: absolute;
+        left: -84%;
+        width: 96px;
+        top: 38%;
+    }
+    .influfly2 {
+        position: absolute;
+        right: -13%;
+        width: 190px;
+        top: 15%;
+    }
+    .influfly1 {
+        position: absolute;
+        right: -12%;
+        top: 49%;
+        width: 240px
+    }
+}
+
+@media (max-width:1199px) {
+    .topbannerhomecontentform h2 {
+        font-size: 28px;
+        line-height: 35px;
+        padding-left: 0%
+    }
+    .topbannerhomeleft {
+        margin-top: 16px
+    }
+    .influencebannertopblock.influencebanner {
+        background-position: right 40% top
+    }
+    .influencebanner .topbannerhomecontentform {
+        margin-right: 2%;
+        padding-top: 14%
+    }
+}
+
+@media (max-width:1024px) {
+    .influfly2 {
+        right: -7%;
+        width: 133px
+    }
+    .influfly1 {
+        right: -7%;
+        top: 56%;
+        width: 172px
+    }
+}
+
+@media (max-width:991px) {
+    .influencebanner .topbannerhomecontentform h2 {
+        margin-top: 0;
+        font-size: 26px;
+        line-height: normal;
+        width: 96%;
+        margin: 0 auto 20px
+    }
+    .influencebanner .topbannerhomecontentform h2 br {
+        display: none
+    }
+    .influencebanner {
+        min-height: 1px
+    }
+    .topbannerhomeleft p {
+        line-height: normal;
+        margin-bottom: 20px
+    }
+    .topbannerhomeleft .mat-card-title:before {
+        display: none
+    }
+    .influencebanner .topbannerhomecontentform {
+        margin-right: 0;
+        padding-top: 14%
+    }
+    .topbannerhomeleft {
+        width: 96%;
+        padding-left: 0%;
+        margin: 0 auto
+    }
+    .topbannerhomeright {
+        width: 96%;
+        display: block;
+        margin: 0 auto
+    }
+    .influencebannertopblock {
+        background: #5c0609!important;
+        padding-bottom: 30px!important
+    }
+    .vpblock1imgleftwrapper {
+        display: block!important;
+        width: 100%
+    }
+    .vpblock1imgleftwrapper img {
+        max-width: 163%
+    }
+    .topbannerhomecontentform {
+        width: 100%;
+        padding-top: 20px !important;
+        text-align: center;
+        margin-right: auto
+    }
+    .topbannerhomeleft p {
+        padding-left: 0
+    }
+    .topbannerhomecontentform h2 br {
+        display: none
+    }
+    .topbannerhomeleft p br {
+        display: none
+    }
+    .topbannerhomecontentform h2 {
+        font-size: 36px;
+        line-height: normal;
+        padding-left: 0;
+        margin-bottom: 0
+    }
+    .sec2btn .btnyellow {
+        margin-top: 0px
+    }
+    .competitionblocknew .compnewblock2content,
+    .newmodifieddiv .competitionblocknew:nth-child(odd) .compnewblock2content {
+        padding: 20px 10px
+    }
+}
+
+@media (max-width:540px) {
+    .topbannerhomecontentform h2 {
+        font-size: 28px
+    }
+    .influfly1,
+    .influfly2,
+    .influfly3 {
+        display: none
+    }
 }

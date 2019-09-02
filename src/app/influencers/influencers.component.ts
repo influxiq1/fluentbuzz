@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder,FormGroup,FormControlName, Validators} from '@angular/forms';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { successmodal} from '../contactus/contactus.component';
+import { MatDialog } from '@angular/material/dialog';
 
 
 @Component({
@@ -13,9 +15,9 @@ export class InfluencersComponent implements OnInit {
   public influencersForm: FormGroup;
   public stateslist: any;
 
-  constructor(public fb: FormBuilder, public http: HttpClient) {
+  constructor(public fb: FormBuilder, public http: HttpClient,  public dialog: MatDialog) {
     this.getState();
-    
+
     this.influencersForm = this.fb.group({
       firstname: ['',Validators.required],
       lastname: ['',Validators.required],
@@ -33,7 +35,7 @@ export class InfluencersComponent implements OnInit {
    }
 
   ngOnInit() {
-    
+
   }
   getState() {
     const httpOptions = {
@@ -56,15 +58,22 @@ influencersSubmit() {
       this.influencersForm.controls[x].markAsTouched();
   }
   if(this.influencersForm.valid) {
-    let link: any; 
+    let link: any;
     link = 'http://192.169.196.208:7061/influencer';
     let data: any = this.influencersForm.value;
     this.http.post(link, data).subscribe(response =>{
       let result: any;
       result = response;
+      if(result.status == 'success'){
+        this.dialog.open(successmodal, {
+      data: {
+        data: 'Successfully submitted'
+            }
+          });
+      }
     })
   }
-  
+
   console.log(this.influencersForm.value);
 }
 inputblur(val:any){
@@ -72,9 +81,9 @@ inputblur(val:any){
   this.influencersForm.controls[val].markAsUntouched();
 }
 
-  
+
   toTop() {
     document.getElementById("formclsblock").scrollIntoView({behavior: 'smooth'});
   }
-  
+
 }

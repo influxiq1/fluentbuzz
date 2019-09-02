@@ -1,0 +1,10 @@
+<mat-card class="modalcls">
+  <mat-card-content><span class="logowrapper"><a [routerLink]="['/home']"><img src="../../assets/images/logo.png" class="landinglogoblock1"></a></span>
+<h1 mat-dialog-title>{{data.data}}</h1>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.data" cdkFocusInitial>Ok</button>
+</div>
+</mat-card-content>
+</mat-card>

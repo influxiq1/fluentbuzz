@@ -12,7 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { InfluencersComponent } from './influencers/influencers.component';
-import { ContactusComponent } from './contactus/contactus.component';
+import { ContactusComponent, successmodal } from './contactus/contactus.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -24,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     HomeComponent,
     InfluencersComponent,
-    ContactusComponent
+    ContactusComponent,
+    successmodal
   ],
   imports: [
     BrowserModule,
@@ -39,5 +40,6 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [],
   bootstrap: [AppComponent],
+  entryComponents:[successmodal],
 })
 export class AppModule { }

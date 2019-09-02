@@ -1,36 +1,228 @@
-.influencebannertopblock {background:url(../../assets/images/homebannerbg.jpg) #5c0609;background-repeat:no-repeat;background-position:right 85% top;padding-bottom:50px!important}
-.vpblock1imgleftwrapper {display:none}
-.topbannerhomecontentform {display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;justify-content:space-between;width:868px;float:right;padding-top:9%;flex-wrap:wrap;margin-right:5%;position:relative}
-.topbannerhomecontentform h2 {display:block;width:100%;align-items:center;justify-content:center;text-align:center;font-family:'CamboRegular';font-size:36px;line-height:44px;color:#f3f7f9;font-weight:400;margin-bottom:15px}
-.vpblock1bg.influencebannertopblock .vpblock1wrapper {z-index:99;position:relative;top:0;right:0;opacity:1;width:1500px;height:100%;margin:0 auto;display:block}
-.topbannerhomeleft {width:55%;padding-left:5%}
-.homebanner {min-height: 864px}
-.homebanner .topbannerhomecontentform {width: 636px;margin-right: 14%;}
-.homebanner .topbannerhomecontentform h2 {	font-family: AdobeGaramondProBold;font-size: 32px;text-transform: uppercase;color: #fff;line-height: 36px;position: relative;}
-.homebanner .topbannerhomecontentform h4 {	font-family: ArnoProRegular;font-size: 30px;text-transform: inherit;color: #fff;line-height: 30px;position: relative;margin-top: 30px !important;font-weight: 400;text-align: center;margin: 0 auto;}
-.formcls.contactusformcls .mat-card-header h2 {margin-bottom: 0 !important}
-@media (max-width:1800px) {.influencebannertopblock.homebanner {background-position: right 30% top}
+.influencebannertopblock {
+    background: url(../../assets/images/homebannerbg.jpg) #5c0609;
+    background-repeat: no-repeat;
+    background-position: right 85% top;
+    padding-bottom: 50px!important
 }
-@media (max-width:1700px) {.competitionblocknew.bg3 {background-position: right 30% center !important;}
+
+.vpblock1imgleftwrapper {
+    display: none
 }
-@media (max-width:1666px) {.influencebannertopblock.homebanner {background-position: right 35% top}
+
+.topbannerhomecontentform {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 868px;
+    float: right;
+    padding-top: 9%;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    position: relative
 }
-@media (max-width: 1600px) {.homebanner .topbannerhomecontentform {margin-right: 12%;}
+
+.topbannerhomecontentform h2 {
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'CamboRegular';
+    font-size: 36px;
+    line-height: 44px;
+    color: #f3f7f9;
+    font-weight: 400;
+    margin-bottom: 15px
 }
-@media (max-width:1540px) {.topbannerhomecontentform {padding-top: 11%;}
+
+.vpblock1bg.influencebannertopblock .vpblock1wrapper {
+    z-index: 99;
+    position: relative;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: block
 }
-@media (max-width:1366px) {.competitionblocknew.bg3 {background-position: right 35% center !important;}
-.homebanner .topbannerhomecontentform {margin-right: 6%}
+
+.topbannerhomeleft {
+    width: 55%;
+    padding-left: 5%
 }
-@media (max-width:1199px) {.influencebannertopblock.homebanner {background-position: right 40% top;}
-.homebanner .topbannerhomecontentform {margin-right: 2%; padding-top: 14%}
+
+.homebanner {
+    min-height: 864px
 }
-@media (max-width:991px) {.homebanner .topbannerhomecontentform h2 {margin-top: 0;font-size: 26px;line-height: normal;width: 96%;margin: 0 auto;}
-.homebanner .topbannerhomecontentform h4 {font-size: 24px;line-height: normal;margin-top: 20px !important;}
-.homebanner .topbannerhomecontentform h2 br {display: none;}
-.homebanner {min-height: 1px;}
-.topbannerhomecontentform {display: block !important;float: none !important;position: relative !important;width: 96% !important;margin: 0 auto!important;padding-top: 3% !important;}
-.vpblock1imgleftwrapper {display: block!important;width: 100%;}
-.vpblock1imgleftwrapper img {max-width: 163%}
-.influencebannertopblock {background: #5c0609!important;padding-bottom: 30px!important;}
+
+.homebanner .topbannerhomecontentform {
+    width: 636px;
+    margin-right: 14%;
+}
+
+.homebanner .topbannerhomecontentform h2 {
+    font-family: AdobeGaramondProBold;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 36px;
+    position: relative;
+}
+
+.homebanner .topbannerhomecontentform h4 {
+    font-family: ArnoProRegular;
+    font-size: 30px;
+    text-transform: inherit;
+    color: #fff;
+    line-height: 30px;
+    position: relative;
+    margin-top: 30px !important;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.formcls.contactusformcls .mat-card-header h2 {
+    margin-bottom: 0 !important
+}
+
+.path {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 10;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media (max-width:1800px) {
+    .influencebannertopblock.homebanner {
+        background-position: right 30% top
+    }
+}
+
+@media (max-width:1700px) {
+    .competitionblocknew.bg3 {
+        background-position: right 30% center !important;
+    }
+}
+
+@media (max-width:1666px) {
+    .influencebannertopblock.homebanner {
+        background-position: right 35% top
+    }
+}
+
+@media (max-width: 1600px) {
+    .homebanner .topbannerhomecontentform {
+        margin-right: 12%;
+    }
+    .fly3 {
+        position: absolute;
+        top: 90%;
+        right: -28%;
+    }
+}
+
+@media (max-width:1540px) {
+    .topbannerhomecontentform {
+        padding-top: 11%;
+    }
+}
+
+@media (max-width:1366px) {
+    .competitionblocknew.bg3 {
+        background-position: right 35% center !important;
+    }
+    .homebanner .topbannerhomecontentform {
+        margin-right: 6%
+    }
+    .fly3 {
+        position: absolute;
+        top: 100%;
+        right: -15%;
+        width: 380px;
+    }
+}
+
+@media (max-width:1300px) {
+    .influencebannertopblock.homebanner {
+        background-position: right 43% top
+    }
+    .fly2 {
+        position: absolute;
+        top: 131%;
+        left: -5%;
+    }
+}
+
+@media (max-width:1199px) {
+    .influencebannertopblock.homebanner {
+        background-position: right 40% top;
+    }
+    .homebanner .topbannerhomecontentform {
+        margin-right: 2%;
+        padding-top: 14%
+    }
+    .fly3 {
+        position: absolute;
+        top: 104%;
+        right: 0%;
+        width: 290px;
+    }
+    .fly1 {
+        position: absolute;
+        top: 28%;
+        right: 0%;
+    }
+}
+
+@media (max-width:991px) {
+    .homebanner .topbannerhomecontentform h2 {
+        margin-top: 0;
+        font-size: 26px;
+        line-height: normal;
+        width: 96%;
+        margin: 0 auto;
+    }
+    .homebanner .topbannerhomecontentform h4 {
+        font-size: 24px;
+        line-height: normal;
+        margin-top: 20px !important;
+    }
+    .homebanner .topbannerhomecontentform h2 br {
+        display: none;
+    }
+    .homebanner {
+        min-height: 1px;
+    }
+    .topbannerhomecontentform {
+        display: block !important;
+        float: none !important;
+        position: relative !important;
+        width: 96% !important;
+        margin: 0 auto!important;
+        padding-top: 3% !important;
+    }
+    .vpblock1imgleftwrapper {
+        display: block!important;
+        width: 100%;
+    }
+    .vpblock1imgleftwrapper img {
+        max-width: 163%
+    }
+    .influencebannertopblock {
+        background: #5c0609!important;
+        padding-bottom: 30px!important;
+    }
 }
